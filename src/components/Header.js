@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../../assets/space-logo.png';
+import logo from '../assets/space-logo.png';
 
 function Header() {
   return (
@@ -11,6 +11,14 @@ function Header() {
       </div>
       <nav className="space-nav">
         <ul className="links-nav">
+          <li>
+            <NavLink
+              className={(isActive) => `${isActive ? '' : 'link-nav'}`}
+              to="/rockets"
+            >
+              Rockets
+            </NavLink>
+          </li>
           <li>
             <NavLink
               className={(isActive) => `${isActive ? '' : 'link-nav'}`}
