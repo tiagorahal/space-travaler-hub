@@ -22,6 +22,14 @@ function Header() {
           <li>
             <NavLink
               className={(isActive) => `${isActive ? '' : 'link-nav'}`}
+              to="/missions"
+            >
+              Missions
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={(isActive) => `${isActive ? '' : 'link-nav'}`}
               to="/profile"
             >
               Profile
