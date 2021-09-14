@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { reserveRocketAction } from '../redux/rockets/rockets';
-import Button from './Button';
-import Badge from './Badge';
+// import { reserveRocketAction } from '../redux/rockets/rockets';
+// import Button from './Button';
+// import Badge from './Badge';
 
 const Rocket = ({
   id, name, description, image, reserved,
