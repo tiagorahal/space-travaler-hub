@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { motion } from 'framer-motion';
 import { fetchAllMissions } from '../../redux/missions/missionslice';
 import Mission from './mission';
-import styles from './missionContainerStyle.module.scss';
+import styles from './missioncontainerstyle.module.scss';
 
 const container = {
   initial: {},
