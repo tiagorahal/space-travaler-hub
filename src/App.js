@@ -13,6 +13,8 @@ function App() {
         <Switch>
           <Route path="/rockets">
             <Rockets />
+            <Route path="/missions">
+            <Rockets />
           </Route>
           <Route path="/profile">
             <Profile />
