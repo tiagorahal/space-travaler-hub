@@ -1,7 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Header from './components/Header/Header';
-import Profile from './components/Profile/Profile';
+// import { useDispatch } from 'react-redux';
+import Header from './components/Header';
+import Profile from './components/Profile';
+import Rockets from './components/Rockets';
 
 function App() {
   return (
@@ -9,6 +11,9 @@ function App() {
       <Router>
         <Header />
         <Switch>
+          <Route path="/rockets">
+            <Rockets />
+          </Route>
           <Route path="/profile">
             <Profile />
           </Route>
