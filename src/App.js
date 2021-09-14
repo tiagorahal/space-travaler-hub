@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Profile from './components/Profile';
 import Rockets from './components/Rockets';
-import Missions from './pages/missions';
+import Missions from './components/missions';
 
 function App() {
   return (
