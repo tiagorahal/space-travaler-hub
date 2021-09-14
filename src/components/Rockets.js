@@ -1,16 +1,15 @@
-import react from 'react';
 import { useSelector } from 'react-redux';
 import Rocket from './Rocket';
 import rocketHooks from '../hooks/rockets';
 
 const Rockets = () => {
-  const rockets = useSelector((state) => state.rockets);
+  const rockets = useSelector((state) => state.rocketsReducer);
   rocketHooks();
 
   return (
     <div>
       {
-        rockets.map((rocket) => 
+        rockets.map((rocket) => (
           <Rocket
             key={rocket.id}
             id={rocket.id}
@@ -19,7 +18,7 @@ const Rockets = () => {
             image={rocket.image}
             reserved={rocket.reserved}
           />
-        )
+        ))
       }
     </div>
   );
