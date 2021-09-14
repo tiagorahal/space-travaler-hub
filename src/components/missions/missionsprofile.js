@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchAllMissions } from '../../../redux/missions/missionsSlice';
+import { fetchAllMissions } from '../../redux/missions/missionslice';
 
 const variants = {
   initial: {

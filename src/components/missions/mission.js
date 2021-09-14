@@ -2,7 +2,7 @@ import { React, useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { motion } from 'framer-motion';
 import PropTypes from 'prop-types';
-import { toggle } from '../../../redux/missions/missionsSlice';
+import { toggle } from '../../redux/missions/missionslice';
 import styles from './missionStyle.module.scss';
 
 const variants = {
