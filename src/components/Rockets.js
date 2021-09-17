@@ -1,10 +1,8 @@
 import { useSelector } from 'react-redux';
 import Rocket from './Rocket';
-import rocketHooks from '../hooks/rockets';
 
 const Rockets = () => {
   const rockets = useSelector((state) => state.rocketsReducer);
-  rocketHooks();
 
   return (
     <div>

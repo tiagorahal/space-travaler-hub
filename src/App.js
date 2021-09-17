@@ -6,14 +6,21 @@ import Header from './components/Header';
 import Profile from './components/Profile';
 import Rockets from './components/Rockets';
 import Missions from './components/missions';
+import rocketHooks from './hooks/rockets';
 
 function App() {
   const rockets = useSelector((state) => state.rocketsReducer);
+
+  rocketHooks();
+
   return (
     <div className="App">
       <Router>
         <Header />
         <Switch>
+          <Route path="/">
+            <Rockets />
+          </Route>
           <Route path="/rockets">
             <Rockets />
           </Route>
