@@ -130,4 +130,5 @@ tbody > tr:nth-child(odd) {
 .rocket-container {
   margin-top: 1em;
   padding: 1em;
+  border: 1px solid green;
 }
