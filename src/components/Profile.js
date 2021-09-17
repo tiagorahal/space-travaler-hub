@@ -2,6 +2,7 @@ import {
   Table, Container, Col, Row,
 } from 'react-bootstrap';
 import PropTypes from 'prop-types';
+import MissionsProfile from './missionprofile';
 
 const Profile = (props) => {
   const { rockets } = props;
@@ -10,7 +11,10 @@ const Profile = (props) => {
     <Container>
       <Row>
         <Col>
-          <h2>My Missions</h2>
+          <div className="missions-column">
+            <h2>My Missions</h2>
+            <MissionsProfile />
+          </div>
         </Col>
         <Col>
           <h2>My Rockets</h2>
