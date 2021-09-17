@@ -18,9 +18,7 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          <Route path="/">
-            <Rockets />
-          </Route>
+
           <Route path="/rockets">
             <Rockets />
           </Route>
@@ -29,6 +27,9 @@ function App() {
           </Route>
           <Route path="/profile">
             <Profile rockets={rockets} />
+          </Route>
+          <Route path="/">
+            <Rockets />
           </Route>
         </Switch>
       </Router>
