@@ -132,3 +132,30 @@ tbody > tr:nth-child(odd) {
   padding: 1em;
   border: 1px solid green;
 }
+
+/* profile missions */
+
+.profile-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.profile-container > div {
+  width: 40%;
+}
+
+.reserved-column {
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.reserved-item {
+  border-bottom: 1px solid #dee2e6;
+  padding: 0.75rem;
+}
+
+.reserved-item:nth-last-child(1) {
+  border: none;
+}
