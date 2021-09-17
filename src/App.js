@@ -18,6 +18,9 @@ function App() {
       <Router>
         <Header />
         <Switch>
+          <Route path="/">
+            <Rockets />
+          </Route>
           <Route path="/rockets">
             <Rockets />
           </Route>
