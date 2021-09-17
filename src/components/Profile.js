@@ -12,8 +12,10 @@ const Profile = (props) => {
       <Row>
         <Col>
           <div className="missions-column">
-            <h2>My Missions</h2>
-            <MissionsProfile />
+            <h2 className="profile-mission-title">My Missions</h2>
+            <Table bordered>
+              <MissionsProfile />
+            </Table>
           </div>
         </Col>
         <Col>
