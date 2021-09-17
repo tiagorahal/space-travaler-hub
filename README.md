@@ -60,8 +60,4 @@ Give a ⭐️ if you like this project!
 
 - Microverse
 - React, Redux and React Router documentation
-<<<<<<< HEAD
 - Lots and lots of Stack Overflow questions and answers
-=======
-- Lots and lots of Stack Overflow questions and answers
->>>>>>> c4b9aaaf70b76c2392257fd10f755fac72f7ad81
