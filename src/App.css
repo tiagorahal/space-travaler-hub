@@ -122,3 +122,13 @@ tbody > tr:nth-child(odd) {
   color: #dc3645;
   border: 1px solid #dc3645;
 }
+
+.rocket-desc {
+  padding: 1em;
+}
+
+.rocket-container {
+  margin-top: 1em;
+  padding: 1em;
+  border: 1px solid green;
+}
