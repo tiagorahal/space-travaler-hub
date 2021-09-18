@@ -1,23 +1,38 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import './App.css';
+import Header from './components/Header';
+import Profile from './components/Profile';
+import Rockets from './components/Rockets';
+import Missions from './components/missions';
+import rocketHooks from './hooks/rockets';
 
 function App() {
+  const rockets = useSelector((state) => state.rocketsReducer);
+
+  rocketHooks();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Header />
+        <Switch>
+
+          <Route path="/rockets">
+            <Rockets />
+          </Route>
+          <Route path="/missions">
+            <Missions />
+          </Route>
+          <Route path="/profile">
+            <Profile rockets={rockets} />
+          </Route>
+          <Route path="/">
+            <Rockets />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
